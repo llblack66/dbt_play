@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: RAW_JAFFLE
+    database: RAW
+    schema: JAFFLE_SHOP
+     # dbt run-operation generate_source --args '{"schema_name": "JAFFLE_SHOP", "database_name": "RAW"}'
+    tables:
+             - name: customers
+             - name: orders
+
+  - name: RAW_STRIPE
+    database: RAW
+    schema: STRIPE
+     # dbt run-operation generate_source --args '{"schema_name": "STRIPE", "database_name": "RAW"}'
+    tables:
+            - name: payment
+
+
+   
