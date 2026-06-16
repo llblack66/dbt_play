@@ -1,3 +1,4 @@
 packages:
   - package: dbt-labs/codegen
-    version: 0.12.1
+    version: 0.13.1  # Force an explicit, modern version
+
