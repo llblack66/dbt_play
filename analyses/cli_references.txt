@@ -1,0 +1,13 @@
+## 🏃‍♂️ Useful CLI Cheat Sheet
+
+### Codegen Commands
+```bash
+dbt run-operation generate_model_yaml --args '{"model_names": ["stg_RAW_JAFFLE__orders"], "include_data_tests": true}'
+```
+dbt run-operation generate_model_yaml --args '{"model_names": ["stg_RAW_JAFFLE__orders"], "include_data_tests": true}'
+
+### Freshness & Build Commands
+```bash
+dbt source freshness
+dbt test --select stg_RAW_JAFFE__orders
+```
