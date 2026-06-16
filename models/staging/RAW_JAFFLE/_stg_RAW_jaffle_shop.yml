@@ -32,5 +32,5 @@ models:
         data_tests:
           - relationships:
               arguments:
-                to: ref('stg_jaffle_shop__customers')
+                to: ref('stg_RAW_JAFFLE__customers')
                 field: customer_id
